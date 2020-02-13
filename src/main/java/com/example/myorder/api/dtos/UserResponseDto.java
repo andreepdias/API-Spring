@@ -26,6 +26,15 @@ public class UserResponseDto {
     @ApiModelProperty(value = "${user.create.address}")
     private String address;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public UserResponseDto setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
     public String getName() {
         return name;
     }
