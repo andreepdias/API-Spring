@@ -1,0 +1,13 @@
+2020-02-13 20:49:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP RESTAURANTE[*]"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP RESTAURANTE [42001-200]
+2020-02-13 20:53:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "PRODUCT[*]"; expected "PREPARE"; SQL statement:
+PRODUCT [42001-200]
+2020-02-13 21:04:08 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM  PRODUCT  
+
+DROP TABLE[*] PRODUCT"; SQL statement:
+SELECT * FROM  PRODUCT  
+
+DROP TABLE PRODUCT [42000-200]

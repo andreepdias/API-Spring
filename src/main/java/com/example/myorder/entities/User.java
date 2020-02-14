@@ -3,26 +3,26 @@ package com.example.myorder.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "usuario")
+@Table(name = "User")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nome", nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "telefone",  nullable = false)
+    @Column(name = "phone",  nullable = false)
     private String phone;
 
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "senha", nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "endereco", nullable = false)
+    @Column(name = "address", nullable = false)
     private String address;
 
     public Integer getId() {

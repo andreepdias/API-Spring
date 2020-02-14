@@ -3,17 +3,17 @@ package com.example.myorder.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "restaurante")
+@Table(name = "Restaurant")
 public class Restaurant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nome", nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "telefone",  nullable = false)
+    @Column(name = "phone",  nullable = false)
     private String phone;
 
     @Column(name = "email", nullable = false)
