@@ -32,31 +32,34 @@ public class UserService {
     }
 
     public UserResponseDto getById(Integer id) {
+        return  UserMapper.toResponseDto(findById(id));
+    }
+
+
+    public User findById(Integer id) {
         Optional<User> user = userRepository.findById(id);
 
         if(!user.isPresent()){
             throw new NotFoundException("Não existe usuário com o id: " + id);
         }
 
-        return  UserMapper.toResponseDto(user.get());
+        return  user.get();
     }
+
 
     public List<UserResponseDto> listAll(){
         List<User> users = userRepository.findAll();
 
+        return users.stream().map(user -> UserMapper.toResponseDto(user)).collect(Collectors.toList());
         /*
         List<UserResponseDto> userResponseList = new ArrayList<>();
-
         for(User user : users){
             userResponseList.add(UserMapper.toResponseDto(user));
         }
-
         return userResponseList;
          */
 
         /* return users.stream().map(UserMapper::toResponseDto).collect(Collectors.toList()); */
-        return users.stream().map(user -> UserMapper.toResponseDto(user)).collect(Collectors.toList());
-
     }
 
     private  User createUser(CreateUserDto createUserDto){
