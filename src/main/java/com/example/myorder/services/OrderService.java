@@ -2,6 +2,7 @@ package com.example.myorder.services;
 
 import java.util.List;
 
+import com.example.myorder.api.mappers.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +40,8 @@ public class OrderService {
                 .setId(order.getId())
                 .setOrderStatus(order.getStatus())
                 .setTotalValue(order.getTotalValue())
-                .setItens(orderItemService.buildOrderItemDtos(order.getItems()));
+                .setItens(orderItemService.buildOrderItemDtos(order.getItems()))
+                .setUserResponse(UserMapper.toResponseDto(order.getUser()));
     }
 
     private Order createOrder(CreateOrderDto createOrderDto) {
