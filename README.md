@@ -1,2 +1,3 @@
 # API-Spring
-API desenvolvida no Minicurso Java 8 e Spring Boot da Fluig
+
+API de ordem de pedidos (inspirado no IFood) desenvolvida em Minicurso de Java 8 e Spring Boot ministrado por um desenvolvedor pleno da TOTVS Fluig.
