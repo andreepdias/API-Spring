@@ -1,4 +1,4 @@
-# API-Spring
+# Minicurso UDESC de Spring Boot
 
 API de ordem de pedidos (inspirado no IFood) desenvolvida em Minicurso de Java 8 e Spring Booot na UDESC.
 
