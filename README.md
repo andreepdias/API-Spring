@@ -4,19 +4,19 @@ API de ordem de pedidos (inspirado no IFood) desenvolvida em Minicurso de Java 8
 
 ## Descrição entidades
 
-### Order
+#### Order
 Representa um pedido na aplicação. Contém uma lista de itens (OrdemItem); um usuário (User) e um restaurant (Restaurant) associados; existe um status (OrderStatusEnum) para representar o status da ordem (aberto, confirmado, em entrega, entregue).
 
-### OrdemItem
+#### OrdemItem
 Representa um item escolhido de um pedido. Contém um produto (Product) associado e a quantidade desejada.
 
-### Product
+#### Product
 Representa um produto dentro da aplicação. Possui nome, valor e restaurante (Restaurant) associado.
 
-### Restaurant
+#### Restaurant
 Representa um restaurante cadastrado no sistema. É composto por nome, telefone e email.
 
-### User
+#### User
 Representa um usuário que ordena um pedido. É composto por nome, telefone, email, senha e endereço.
 
 
