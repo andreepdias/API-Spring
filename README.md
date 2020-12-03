@@ -2,6 +2,17 @@
 
 API de ordem de pedidos (inspirado no IFood) desenvolvida em Minicurso de Java 8 e Spring Booot na UDESC.
 
+## Padrões utilizados
+
+* Foi  adotado o modelo em camadadas (Controller, Service, Domain, Repository).
+* É utilizado objetos de transferência de dados (DTO) para recebimento e envio de objetos da API.
+
+## Tecnologias utilizadas
+
+* Banco de dados em memória (H2)
+* Documentação com Swagger
+* ModelMapper para mapeamento de entidades  para DTO.
+
 ## Descrição entidades
 
 #### Order
@@ -19,14 +30,3 @@ Representa um restaurante cadastrado no sistema. É composto por nome, telefone 
 #### User
 Representa um usuário que ordena um pedido. É composto por nome, telefone, email, senha e endereço.
 
-
-## Padrões utilizados
-
-* Foi  adotado o modelo em camadadas (Controller, Service, Domain, Repository).
-* É utilizado objetos de transferência de dados (DTO) para recebimento e envio de objetos da API.
-
-## Tecnologias utilizadas
-
-* Banco de dados em memória (H2)
-* Documentação com Swagger
-* ModelMapper para mapeamento de entidades  para DTO.
